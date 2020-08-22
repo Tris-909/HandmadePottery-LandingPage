@@ -1,0 +1,83 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 4375px;
+  margin: 0; }
+
+.HandPottery_Block1 {
+  position: absolute;
+  width: 100%;
+  height: 909px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../assets//5fe4c032c1ffce56de31fb12f7c93492.jpg"), url("../assets//"); }
+  .HandPottery_Block1_Container {
+    width: 83.33%;
+    margin: 0% 8.3% 5.48% 8.3%;
+    height: 91.3%;
+    background-color: transparent;
+    position: relative; }
+  .HandPottery_Block1_Navbar {
+    width: 74.91%;
+    height: 17.1%;
+    margin: 0% 12.5% 0% 12.5%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row; }
+    .HandPottery_Block1_Navbar_Item {
+      width: 77px;
+      height: 24px;
+      text-decoration: none;
+      margin-top: 86px;
+      margin-right: 60px;
+      margin-left: 60px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      color: #2F2F2F;
+      font-size: 18px;
+      line-height: 24px; }
+    .HandPottery_Block1_Navbar_Logo {
+      padding: 32px; }
+  .HandPottery_Block1_MainText {
+    position: absolute;
+    top: 27%;
+    width: 38.25%;
+    height: 22.4%;
+    font-family: 'GFS Didot', serif;
+    font-style: bold;
+    font-size: 72px;
+    color: #2F2F2F;
+    text-transform: uppercase; }
+  .HandPottery_Block1_VerticalText {
+    position: absolute;
+    left: -7%;
+    top: 57%;
+    font-family: 'Sacramento', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 105px;
+    width: 21.91%;
+    height: 12.65%;
+    transform: rotate(-90deg);
+    color: #BF965F; }
+  .HandPottery_Block1_SVG {
+    position: absolute;
+    left: 30%;
+    top: 31%; }
+  .HandPottery_Block1_Button {
+    position: absolute;
+    top: 88%;
+    left: 0%;
+    padding: 12px;
+    background: #BF965F;
+    text-align: center;
+    border: none; }
+    .HandPottery_Block1_Button a {
+      color: #FCFCFC;
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      text-decoration: none;
+      line-height: 36px; }
