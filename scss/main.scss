@@ -6,11 +6,9 @@ body {
 }
 
 .HandPottery_Block1 {
-    position: absolute;
     width: 100%;
     height: 909px;
-    left: 0px;
-    top: 0px;
+    z-index: 0;
     background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../assets//5fe4c032c1ffce56de31fb12f7c93492.jpg'), url('../assets//');
 
     &_Container {
@@ -84,6 +82,7 @@ body {
 
     &_SVG {
         position: absolute;
+        z-index: 1;
         left: 30%;
         top: 31%;
     }
@@ -108,6 +107,55 @@ body {
             line-height: 36px;
         }
     }
-    
+}
 
+.HandPottery_Block2 {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background: #F2E6DA;
+
+    &_RightPicture {
+        position: absolute;
+        top: 10%;
+        left: 0%;
+    }
+
+    &_TextContainer {
+        width: (636/1440)*100%;
+        height: (273/550)*100%; 
+        position: absolute;
+        top: 25.27%;
+        left: 27.91%;
+
+        display: flex;
+        flex-direction: column;
+
+        &_Title {
+            height: 93px;
+            text-align: center;
+            font-family: Sacramento;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 64px;
+            line-height: 93px;
+            color: #2F2F2F;
+        }
+
+        &_Text {
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 36px;
+            text-align: center;
+            color: #2F2F2F;
+        }
+    }
+
+    &_LeftPicture {
+        position: absolute;
+        right: 0;
+        top: 26.9%;
+    }
 }
