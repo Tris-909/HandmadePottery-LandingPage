@@ -252,7 +252,7 @@ body {
         height: (444/1405)*100%;
         border: 2px solid #BF965F;
         box-sizing: border-box;
-
+        z-index: 10;
         &_Margin {
             width: (326/408)*100%;
             height: ((444 - 120)/444)*100%;
@@ -286,5 +286,227 @@ body {
         position: absolute;
         left: (120/1440)*100%;
         top: (438/1405)*100%;
+    }
+}
+
+.HandPottery_Block4 {
+    width: 100%;
+    height: 569px;
+    position: absolute;
+    background: #CFB59A;
+
+    &_RegisterFormContainer {
+        width: ((690+510)/1440)*100%;
+        height: (837/569)*100%;
+
+        position: absolute;
+        left: (120/1440)*100%;
+        bottom: (120/569)*100%;
+
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "form image";
+
+        &_Left {
+            grid-area: form;
+            background: #FCFCFC;
+
+            &_Form {
+                width: (534/690)*100%;
+                height: ((837 - (56+80))/837)*100%;
+                margin: (56/837)*100% (78/690)*100% (80/837)*100% (78/690)*100%;
+
+                display: flex;
+                flex-direction: column;
+
+                .Form_Title {
+                    width: 100%;
+                    text-align: center;
+                    color: #2F2F2F;
+                    font-family: Didot;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 62px;
+                    margin-bottom: 48px;
+                }
+
+                .InputTitle {
+                    font-family: Roboto Slab;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-bottom: 10px;
+                    color: #2F2F2F;
+                }
+
+                .Input {
+                    width: 100%;
+                    height: 48px;
+                    margin-bottom: 30px;
+                    border: none;
+                    text-indent: 20px;
+
+                    &::placeholder {
+                        padding-left: 0px;
+
+                        font-family: Roboto Slab;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #CFCFCF;
+                    }
+                }
+
+                .Form_NameInput {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    border-bottom: 1px solid #BF965F;
+                    margin-bottom: 15px;
+                }
+
+                .EmailInput {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    border-bottom: 1px solid #BF965F;
+                    margin-bottom: 15px;
+                }
+
+                .PhoneNumberInput {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    border-bottom: 1px solid #BF965F;
+                    margin-bottom: 15px;
+                }
+
+                .UsersCheck {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 40px;
+
+                    &_Question {
+                        font-family: Roboto Slab;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #2F2F2F;
+                        margin-bottom: 20px;
+                    }
+
+                    &_Container {
+                        width: 100%;
+                        height: 56px;
+                        display: grid;
+                        grid-template-columns: 25% 35% 40%;
+                        grid-template-rows: 1fr;
+                        grid-template-areas: "ButtonContainer . Result";
+
+                        &_ButtonContainer {
+                            grid-area: ButtonContainer;
+                            height: 100%;
+
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+
+                            &_Decrease {
+                                background: #FCFCFC;
+                                border: 1px solid #CFCFCF;                              
+                                box-sizing: border-box;
+                                width: 24px;
+                                height: 24px;
+                                border-radius: 50%;
+                                outline: none;
+                                padding-bottom: 24px;
+                            }
+
+                            &_Number {        
+                                font-family: Roboto Slab;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 24px;                              
+                                color: #2F2F2F;
+                            }
+
+                            &_Increase {
+                                background: #FCFCFC;
+                                border: 1px solid #CFCFCF;                              
+                                box-sizing: border-box;
+                                width: 24px;
+                                height: 24px;
+                                border-radius: 50%;
+                                outline: none;
+                                padding-bottom: 0px;
+                            }
+                        }
+
+                        &_Result {
+                            grid-area: Result;
+                            height: 100%;
+                            font-family: Roboto Slab;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #2F2F2F;
+
+                            &_Text {
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            &_Price {
+                                margin-left: 10px;
+                                color: #7C8C69;
+                            }
+                        } 
+                    }
+                }
+
+                .Form_Button {
+                    background: #BF965F;
+                    width: 100%;
+                    height: 60px;
+                    text-align: center;
+                    border: none;
+
+                    span {
+                        font-family: Roboto Slab;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 36px;
+                        text-align: center;
+                        color: #FCFCFC;
+
+                    }
+                }
+            }
+        }
+
+        &_Right {
+            grid-area: image;
+
+            .ImageForm {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+        }
     }
 }

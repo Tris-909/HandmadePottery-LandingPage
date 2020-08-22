@@ -189,7 +189,8 @@ body {
     width: 28.33333%;
     height: 31.60142%;
     border: 2px solid #BF965F;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    z-index: 10; }
     .HandPottery_Block3_VenueContainer_Margin {
       width: 79.90196%;
       height: 72.97297%;
@@ -215,3 +216,170 @@ body {
     position: absolute;
     left: 8.33333%;
     top: 31.17438%; }
+
+.HandPottery_Block4 {
+  width: 100%;
+  height: 569px;
+  position: absolute;
+  background: #CFB59A; }
+  .HandPottery_Block4_RegisterFormContainer {
+    width: 83.33333%;
+    height: 147.10018%;
+    position: absolute;
+    left: 8.33333%;
+    bottom: 21.08963%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "form image"; }
+    .HandPottery_Block4_RegisterFormContainer_Left {
+      grid-area: form;
+      background: #FCFCFC; }
+      .HandPottery_Block4_RegisterFormContainer_Left_Form {
+        width: 77.3913%;
+        height: 83.75149%;
+        margin: 6.69056% 11.30435% 9.55795% 11.30435%;
+        display: flex;
+        flex-direction: column; }
+        .HandPottery_Block4_RegisterFormContainer_Left_Form .Form_Title {
+          width: 100%;
+          text-align: center;
+          color: #2F2F2F;
+          font-family: Didot;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 62px;
+          margin-bottom: 48px; }
+        .HandPottery_Block4_RegisterFormContainer_Left_Form .InputTitle {
+          font-family: Roboto Slab;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 10px;
+          color: #2F2F2F; }
+        .HandPottery_Block4_RegisterFormContainer_Left_Form .Input {
+          width: 100%;
+          height: 48px;
+          margin-bottom: 30px;
+          border: none;
+          text-indent: 20px; }
+          .HandPottery_Block4_RegisterFormContainer_Left_Form .Input::placeholder {
+            padding-left: 0px;
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #CFCFCF; }
+        .HandPottery_Block4_RegisterFormContainer_Left_Form .Form_NameInput {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          border-bottom: 1px solid #BF965F;
+          margin-bottom: 15px; }
+        .HandPottery_Block4_RegisterFormContainer_Left_Form .EmailInput {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          border-bottom: 1px solid #BF965F;
+          margin-bottom: 15px; }
+        .HandPottery_Block4_RegisterFormContainer_Left_Form .PhoneNumberInput {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          border-bottom: 1px solid #BF965F;
+          margin-bottom: 15px; }
+        .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 40px; }
+          .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Question {
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #2F2F2F;
+            margin-bottom: 20px; }
+          .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container {
+            width: 100%;
+            height: 56px;
+            display: grid;
+            grid-template-columns: 25% 35% 40%;
+            grid-template-rows: 1fr;
+            grid-template-areas: "ButtonContainer . Result"; }
+            .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer {
+              grid-area: ButtonContainer;
+              height: 100%;
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center; }
+              .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer_Decrease {
+                background: #FCFCFC;
+                border: 1px solid #CFCFCF;
+                box-sizing: border-box;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                outline: none;
+                padding-bottom: 24px; }
+              .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer_Number {
+                font-family: Roboto Slab;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                color: #2F2F2F; }
+              .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer_Increase {
+                background: #FCFCFC;
+                border: 1px solid #CFCFCF;
+                box-sizing: border-box;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                outline: none;
+                padding-bottom: 0px; }
+            .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_Result {
+              grid-area: Result;
+              height: 100%;
+              font-family: Roboto Slab;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 24px;
+              color: #2F2F2F; }
+              .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_Result_Text {
+                height: 100%;
+                display: flex;
+                align-items: center; }
+              .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_Result_Price {
+                margin-left: 10px;
+                color: #7C8C69; }
+        .HandPottery_Block4_RegisterFormContainer_Left_Form .Form_Button {
+          background: #BF965F;
+          width: 100%;
+          height: 60px;
+          text-align: center;
+          border: none; }
+          .HandPottery_Block4_RegisterFormContainer_Left_Form .Form_Button span {
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #FCFCFC; }
+    .HandPottery_Block4_RegisterFormContainer_Right {
+      grid-area: image; }
+      .HandPottery_Block4_RegisterFormContainer_Right .ImageForm {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
