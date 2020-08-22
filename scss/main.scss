@@ -83,7 +83,7 @@ body {
     &_SVG {
         position: absolute;
         z-index: 1;
-        left: 30%;
+        left: 38%;
         top: 31%;
     }
 
@@ -157,5 +157,134 @@ body {
         position: absolute;
         right: 0;
         top: 26.9%;
+    }
+}
+
+.HandPottery_Block3 {
+    width: 100%;
+    height: 1405px;
+    background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../assets/Rectangle\ 17.png');
+    position: relative;
+
+    &_TextContainer {
+        width: (724/1440)*100%;
+        height: (216/1405)*100%;
+        position: absolute;
+        left: (120/1440)*100%;
+        top: (80/1405)*100%;
+
+        &_Title {
+            font-family: Didot;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 62px;
+            color: #2F2F2F;
+        }
+
+        &_ItemList {
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: normal;
+            margin-top: 1em;
+            font-size: 18px;
+            line-height: 24px;
+            color: #2F2F2F;
+
+            .arrow {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &_PriceContainer {
+        position: absolute;
+        top: (174/1405)*100%;
+        right: (120/1440)*100%;
+
+        width: (408/1440)*100%;
+        height: (136/1440)*100%;
+
+        border: 2px solid #BF965F;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+
+        &_UpperBox {
+            height: (88/136)*100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: normal;
+
+            &_Title {
+                font-size: 32px;
+                line-height: 42px;
+                color: #7C8C69;
+            }
+        }
+
+        &_BelowBox {
+            width: 100%;
+            height: (48/136)*100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #BF965F;
+
+            &_Text {
+                font-size: 18px;
+                line-height: 24px;
+                color: white;
+            }
+        }
+    }
+
+    &_VenueContainer {
+        position: absolute;
+        top: (326/1405)*100%;
+        right: (120/1440)*100%;
+        width: (408/1440)*100%;
+        height: (444/1405)*100%;
+        border: 2px solid #BF965F;
+        box-sizing: border-box;
+
+        &_Margin {
+            width: (326/408)*100%;
+            height: ((444 - 120)/444)*100%;
+            margin: 14.3% 10% 14.3% 10%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &_Item {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 20px;
+
+                .VenueText {
+                    font-family: Roboto Slab;
+                    margin-top: 5px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    color: #2F2F2F;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+    &_SVG {
+        position: absolute;
+        left: (120/1440)*100%;
+        top: (438/1405)*100%;
     }
 }
