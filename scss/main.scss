@@ -1,4 +1,5 @@
-$break-small: 700px;
+$break-mini: 450px;
+$break-small: 770px;
 $break-medium : 1400px;
 
 body {
@@ -314,12 +315,34 @@ body {
     background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../assets/Rectangle\ 17.png');
     position: relative;
 
+    @media screen and (max-width: $break-small) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 10% 40%;
+        grid-template-areas: "Text"
+                             "SVG"
+                             "Price"
+                             "Venue";
+        row-gap: 20px;
+        height: 2005px;
+    }
+
     &_TextContainer {
         width: (724/1440)*100%;
         height: (216/1405)*100%;
         position: absolute;
         left: (120/1440)*100%;
         top: (80/1405)*100%;
+
+        @media screen and (max-width: $break-small) {
+            margin-top: 50px;
+            grid-area: Text;
+            width: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
 
         &_Title {
             font-family: Didot;
@@ -358,6 +381,16 @@ body {
 
         display: flex;
         flex-direction: column;
+
+        @media screen and (max-width: $break-small) {
+            grid-area: Price;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
 
         &_UpperBox {
             height: (88/136)*100%;
@@ -401,6 +434,17 @@ body {
         border: 2px solid #BF965F;
         box-sizing: border-box;
         z-index: 10;
+
+        @media screen and (max-width: $break-small) {
+            grid-area: Venue;
+            width: 100%;
+            height: 50%;
+            position: relative;
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
+
         &_Margin {
             width: (326/408)*100%;
             height: ((444 - 120)/444)*100%;
@@ -437,6 +481,15 @@ body {
         left: (120/1440)*100%;
         top: (438/1405)*100%;
 
+        @media screen and (max-width: $break-small) {
+            grid-area: SVG;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
         .SVG {
             width: 100%;
             height: 100%;
@@ -462,6 +515,12 @@ body {
         grid-template-columns: 60% 40%;
         grid-template-rows: 1fr;
         grid-template-areas: "form image";
+
+        @media screen and (max-width: $break-small) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "form";
+        }
 
         &_Left {
             grid-area: form;
@@ -567,6 +626,16 @@ body {
                         grid-template-rows: 1fr;
                         grid-template-areas: "ButtonContainer . Result";
 
+                        @media screen and (max-width: $break-small) {
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 1fr 1fr;
+                            row-gap: 20px;
+                            grid-template-areas: "ButtonContainer"
+                                                 "Result";
+
+                        }
+
                         &_ButtonContainer {
                             grid-area: ButtonContainer;
                             height: 100%;
@@ -574,6 +643,10 @@ body {
                             display: flex;
                             justify-content: space-evenly;
                             align-items: center;
+
+                            @media screen and (max-width: $break-small) {
+                                justify-content: flex-start;
+                            }
 
                             &_Decrease {
                                 background: #FCFCFC;
@@ -584,6 +657,10 @@ body {
                                 border-radius: 50%;
                                 outline: none;
                                 padding-bottom: 24px;
+
+                                @media screen and (max-width: $break-small) {
+                                    margin-right: 25px;
+                                }
                             }
 
                             &_Number {        
@@ -604,6 +681,11 @@ body {
                                 border-radius: 50%;
                                 outline: none;
                                 padding-bottom: 0px;
+
+                                
+                                @media screen and (max-width: $break-small) {
+                                    margin-left: 25px;
+                                }
                             }
                         }
 
@@ -659,6 +741,11 @@ body {
             grid-area: image;
             width: 100%;
             height: 100%;
+
+            @media screen and (max-width: $break-small) {
+                display: none;
+            }
+
             .ImageForm {
                 width: 100%;
                 height: 100%;
@@ -676,6 +763,14 @@ body {
     position: relative;
     background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../assets/Rectangle\ 18.png');
 
+    @media screen and (min-width: 0px) {
+        height: 2200px;
+    }
+
+    @media screen and (min-width: $break-mini) {
+        height: 1200px;
+    }
+
     &_Container {
         width: ((1440 - 120*2)/1440)*100%;
         height: ((669 - 80 -56)/669)*100%;
@@ -685,6 +780,11 @@ body {
 
         display: flex;
         flex-direction: column;
+
+        @media screen and (max-width: $break-mini) {
+            top: 0%;
+            height: 100%;
+        }
 
         &_ForTitle {
             width: 100%;
@@ -709,6 +809,34 @@ body {
                                  "img5 img6 img7 img8";
             row-gap: 24px;
             column-gap: 24px;
+
+            @media screen and (max-width: $break-small) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas: "img1 img2" 
+                                     "img3 img4"
+                                     "img5 img6" 
+                                     "img7 img8";
+                height: 100%;
+            }
+
+            
+            @media screen and (max-width: $break-mini) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: "img1" 
+                                     "img2" 
+                                     "img3" 
+                                     "img4"
+                                     "img5" 
+                                     "img6" 
+                                     "img7" 
+                                     "img8";
+                height: 100%;
+            }
+
 
             .Ourmoment_img {
                 width: 100%;
@@ -750,6 +878,10 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media screen and (max-width: $break-mini) {
+                margin-bottom: 35px;
+            }
 
             &_Button {
                 background: transparent;

@@ -15,7 +15,7 @@ body {
     height: 91.3%;
     background-color: transparent;
     position: relative; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block1_Container {
         margin: 0% 0% 5.48% 0%;
         width: 100%; } }
@@ -26,14 +26,14 @@ body {
     background-color: transparent;
     display: flex;
     flex-direction: row; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block1_Navbar {
         margin: 0% 0% 0% 0%;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr; } }
-    @media screen and (min-width: 700px) and (max-width: 1400px) {
+    @media screen and (min-width: 770px) and (max-width: 1400px) {
       .HandPottery_Block1_Navbar {
         margin: 0% 0% 0% 0%;
         width: 100%;
@@ -52,14 +52,14 @@ body {
       color: #2F2F2F;
       font-size: 18px;
       line-height: 24px; }
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 770px) {
         .HandPottery_Block1_Navbar_Item {
           margin-top: 56px;
           margin-right: 0%;
           margin-left: 0%;
           text-align: center;
           width: 100%; } }
-      @media screen and (min-width: 700px) and (max-width: 1400px) {
+      @media screen and (min-width: 770px) and (max-width: 1400px) {
         .HandPottery_Block1_Navbar_Item {
           margin-top: 56px;
           margin-right: 0%;
@@ -68,7 +68,7 @@ body {
           width: 100%; } }
     .HandPottery_Block1_Navbar_Logo {
       padding: 32px; }
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 770px) {
         .HandPottery_Block1_Navbar_Logo {
           display: none; } }
   .HandPottery_Block1_MainText {
@@ -81,11 +81,11 @@ body {
     font-weight: 600;
     color: #2F2F2F;
     text-transform: uppercase; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block1_MainText {
         font-size: 56px;
         top: 18%; } }
-    @media screen and (min-width: 700px) and (max-width: 1400px) {
+    @media screen and (min-width: 770px) and (max-width: 1400px) {
       .HandPottery_Block1_MainText {
         z-index: 10; } }
   .HandPottery_Block1_VerticalText {
@@ -101,11 +101,11 @@ body {
     height: 12.65%;
     transform: rotate(-90deg);
     color: #BF965F; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block1_VerticalText {
         left: 2%;
         top: 57%; } }
-    @media screen and (min-width: 700px) and (max-width: 1400px) {
+    @media screen and (min-width: 770px) and (max-width: 1400px) {
       .HandPottery_Block1_VerticalText {
         top: 65%; } }
   .HandPottery_Block1_SVG {
@@ -115,12 +115,12 @@ body {
     top: 31%;
     width: 56.11111%;
     height: 62.92629%; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block1_SVG {
         top: 20%;
         left: 26%;
         width: 70%; } }
-    @media screen and (min-width: 700px) and (max-width: 1400px) {
+    @media screen and (min-width: 770px) and (max-width: 1400px) {
       .HandPottery_Block1_SVG {
         top: 36%;
         left: 30%;
@@ -146,7 +146,7 @@ body {
       line-height: 36px; }
     .HandPottery_Block1_Button:hover {
       background: #CFB59A; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block1_Button {
         left: 25%; } }
 
@@ -155,7 +155,7 @@ body {
   height: 550px;
   position: relative;
   background: #F2E6DA; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     .HandPottery_Block2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -167,7 +167,7 @@ body {
     left: 0%;
     width: 21.94444%;
     height: 80.36364%; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block2_RightPicture {
         grid-area: Picture1;
         position: relative;
@@ -186,7 +186,7 @@ body {
     left: 27.91%;
     display: flex;
     flex-direction: column; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block2_TextContainer {
         grid-area: Text;
         width: 100%;
@@ -216,7 +216,7 @@ body {
     top: 26.9%;
     width: 21.94444%;
     height: 46.36364%; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       .HandPottery_Block2_LeftPicture {
         grid-area: Picture2;
         position: relative;
@@ -233,12 +233,29 @@ body {
   height: 1405px;
   background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../assets/Rectangle 17.png");
   position: relative; }
+  @media screen and (max-width: 770px) {
+    .HandPottery_Block3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 10% 40%;
+      grid-template-areas: "Text" "SVG" "Price" "Venue";
+      row-gap: 20px;
+      height: 2005px; } }
   .HandPottery_Block3_TextContainer {
     width: 50.27778%;
     height: 15.37367%;
     position: absolute;
     left: 8.33333%;
     top: 5.69395%; }
+    @media screen and (max-width: 770px) {
+      .HandPottery_Block3_TextContainer {
+        margin-top: 50px;
+        grid-area: Text;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center; } }
     .HandPottery_Block3_TextContainer_Title {
       font-family: Didot;
       font-style: normal;
@@ -266,6 +283,15 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 770px) {
+      .HandPottery_Block3_PriceContainer {
+        grid-area: Price;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center; } }
     .HandPottery_Block3_PriceContainer_UpperBox {
       height: 64.70588%;
       display: flex;
@@ -299,6 +325,15 @@ body {
     border: 2px solid #BF965F;
     box-sizing: border-box;
     z-index: 10; }
+    @media screen and (max-width: 770px) {
+      .HandPottery_Block3_VenueContainer {
+        grid-area: Venue;
+        width: 100%;
+        height: 50%;
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center; } }
     .HandPottery_Block3_VenueContainer_Margin {
       width: 79.90196%;
       height: 72.97297%;
@@ -326,6 +361,14 @@ body {
     height: 33.02491%;
     left: 8.33333%;
     top: 31.17438%; }
+    @media screen and (max-width: 770px) {
+      .HandPottery_Block3_SVG {
+        grid-area: SVG;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        top: 0; } }
     .HandPottery_Block3_SVG .SVG {
       width: 100%;
       height: 100%; }
@@ -345,6 +388,11 @@ body {
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr;
     grid-template-areas: "form image"; }
+    @media screen and (max-width: 770px) {
+      .HandPottery_Block4_RegisterFormContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "form"; } }
     .HandPottery_Block4_RegisterFormContainer_Left {
       grid-area: form;
       background: #FCFCFC; }
@@ -427,12 +475,22 @@ body {
             grid-template-columns: 25% 35% 40%;
             grid-template-rows: 1fr;
             grid-template-areas: "ButtonContainer . Result"; }
+            @media screen and (max-width: 770px) {
+              .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 20px;
+                grid-template-areas: "ButtonContainer" "Result"; } }
             .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer {
               grid-area: ButtonContainer;
               height: 100%;
               display: flex;
               justify-content: space-evenly;
               align-items: center; }
+              @media screen and (max-width: 770px) {
+                .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer {
+                  justify-content: flex-start; } }
               .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer_Decrease {
                 background: #FCFCFC;
                 border: 1px solid #CFCFCF;
@@ -442,6 +500,9 @@ body {
                 border-radius: 50%;
                 outline: none;
                 padding-bottom: 24px; }
+                @media screen and (max-width: 770px) {
+                  .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer_Decrease {
+                    margin-right: 25px; } }
               .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer_Number {
                 font-family: Roboto Slab;
                 font-style: normal;
@@ -458,6 +519,9 @@ body {
                 border-radius: 50%;
                 outline: none;
                 padding-bottom: 0px; }
+                @media screen and (max-width: 770px) {
+                  .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer_Increase {
+                    margin-left: 25px; } }
             .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_Result {
               grid-area: Result;
               height: 100%;
@@ -494,6 +558,9 @@ body {
       grid-area: image;
       width: 100%;
       height: 100%; }
+      @media screen and (max-width: 770px) {
+        .HandPottery_Block4_RegisterFormContainer_Right {
+          display: none; } }
       .HandPottery_Block4_RegisterFormContainer_Right .ImageForm {
         width: 100%;
         height: 100%;
@@ -506,6 +573,12 @@ body {
   height: 669px;
   position: relative;
   background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../assets/Rectangle 18.png"); }
+  @media screen and (min-width: 0px) {
+    .HandPottery_Block5 {
+      height: 2200px; } }
+  @media screen and (min-width: 450px) {
+    .HandPottery_Block5 {
+      height: 1200px; } }
   .HandPottery_Block5_Container {
     width: 83.33333%;
     height: 79.67115%;
@@ -514,6 +587,10 @@ body {
     left: 8.33333%;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 450px) {
+      .HandPottery_Block5_Container {
+        top: 0%;
+        height: 100%; } }
     .HandPottery_Block5_Container_ForTitle {
       width: 100%;
       text-align: center;
@@ -533,6 +610,20 @@ body {
       grid-template-areas: "img1 img2 img3 img4" "img5 img6 img7 img8";
       row-gap: 24px;
       column-gap: 24px; }
+      @media screen and (max-width: 770px) {
+        .HandPottery_Block5_Container_ForImages {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-areas: "img1 img2"  "img3 img4" "img5 img6"  "img7 img8";
+          height: 100%; } }
+      @media screen and (max-width: 450px) {
+        .HandPottery_Block5_Container_ForImages {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-areas: "img1"  "img2"  "img3"  "img4" "img5"  "img6"  "img7"  "img8";
+          height: 100%; } }
       .HandPottery_Block5_Container_ForImages .Ourmoment_img {
         width: 100%;
         height: 100%;
@@ -561,6 +652,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media screen and (max-width: 450px) {
+        .HandPottery_Block5_Container_ForButton {
+          margin-bottom: 35px; } }
       .HandPottery_Block5_Container_ForButton_Button {
         background: transparent;
         padding: 5px;
