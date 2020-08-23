@@ -211,10 +211,35 @@ body {
     position: relative;
     background: #F2E6DA;
 
+    @media screen and (max-width: $break-small) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 75% 25%;
+        grid-template-areas: "Text Text"
+                             "Picture1 Picture2";
+    }
+
     &_RightPicture {
         position: absolute;
         top: 10%;
         left: 0%;
+        width: (316/1440)*100%;
+        height: (442/550)*100%;
+
+        @media screen and (max-width: $break-small) {
+            grid-area: Picture1;
+            position: relative;
+
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+        }
+
+        .Picture {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &_TextContainer {
@@ -226,6 +251,15 @@ body {
 
         display: flex;
         flex-direction: column;
+
+        @media screen and (max-width: $break-small) {
+            grid-area: Text;
+
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+        }
 
         &_Title {
             height: 93px;
@@ -253,6 +287,24 @@ body {
         position: absolute;
         right: 0;
         top: 26.9%;
+
+        width: (316/1440)*100%;
+        height: (255/550)*100%;
+
+        @media screen and (max-width: $break-small) {
+            grid-area: Picture2;
+            position: relative;
+
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+        }
+
+        .Picture {
+            width: 100%;
+            height: 100%;   
+        }
     }
 }
 

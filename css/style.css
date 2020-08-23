@@ -155,10 +155,29 @@ body {
   height: 550px;
   position: relative;
   background: #F2E6DA; }
+  @media screen and (max-width: 700px) {
+    .HandPottery_Block2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 75% 25%;
+      grid-template-areas: "Text Text" "Picture1 Picture2"; } }
   .HandPottery_Block2_RightPicture {
     position: absolute;
     top: 10%;
-    left: 0%; }
+    left: 0%;
+    width: 21.94444%;
+    height: 80.36364%; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block2_RightPicture {
+        grid-area: Picture1;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%; } }
+    .HandPottery_Block2_RightPicture .Picture {
+      width: 100%;
+      height: 100%; }
   .HandPottery_Block2_TextContainer {
     width: 44.16667%;
     height: 49.63636%;
@@ -167,6 +186,13 @@ body {
     left: 27.91%;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block2_TextContainer {
+        grid-area: Text;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%; } }
     .HandPottery_Block2_TextContainer_Title {
       height: 93px;
       text-align: center;
@@ -187,7 +213,20 @@ body {
   .HandPottery_Block2_LeftPicture {
     position: absolute;
     right: 0;
-    top: 26.9%; }
+    top: 26.9%;
+    width: 21.94444%;
+    height: 46.36364%; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block2_LeftPicture {
+        grid-area: Picture2;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%; } }
+    .HandPottery_Block2_LeftPicture .Picture {
+      width: 100%;
+      height: 100%; }
 
 .HandPottery_Block3 {
   width: 100%;
