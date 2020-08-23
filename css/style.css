@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 909px;
   z-index: 0;
-  background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../assets//5fe4c032c1ffce56de31fb12f7c93492.jpg"), url("../assets//"); }
+  background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../../assets/Block1_Background.jpg"); }
   .HandPottery_Block1_Container {
     width: 83.33%;
     margin: 0% 8.3% 5.48% 8.3%;
@@ -47,11 +47,12 @@ body {
       margin-top: 86px;
       margin-right: 6.32711%;
       margin-left: 6.32711%;
-      font-family: 'Roboto Slab', serif;
-      font-weight: 700;
-      color: #2F2F2F;
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: normal;
       font-size: 18px;
-      line-height: 24px; }
+      line-height: 24px;
+      color: #2F2F2F; }
       @media screen and (max-width: 770px) {
         .HandPottery_Block1_Navbar_Item {
           margin-top: 56px;
@@ -138,13 +139,13 @@ body {
     text-align: center;
     border: none; }
     .HandPottery_Block1_Button a {
-      color: #FCFCFC;
       font-family: Roboto Slab;
       font-style: normal;
-      font-weight: 500;
+      font-weight: normal;
       font-size: 24px;
-      text-decoration: none;
-      line-height: 36px; }
+      line-height: 36px;
+      color: #FCFCFC;
+      text-decoration: none; }
     .HandPottery_Block1_Button:hover {
       background: #CFB59A; }
     @media screen and (max-width: 770px) {
@@ -209,8 +210,8 @@ body {
       font-weight: normal;
       font-size: 18px;
       line-height: 36px;
-      text-align: center;
-      color: #2F2F2F; }
+      color: #2F2F2F;
+      text-align: center; }
   .HandPottery_Block2_LeftPicture {
     position: absolute;
     right: 0;
@@ -232,7 +233,7 @@ body {
 .HandPottery_Block3 {
   width: 100%;
   height: 1405px;
-  background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../assets/Rectangle 17.png");
+  background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../../assets/Block3_Background.png");
   position: relative; }
   @media screen and (max-width: 770px) {
     .HandPottery_Block3 {
@@ -268,16 +269,16 @@ body {
       font-family: Roboto Slab;
       font-style: normal;
       font-weight: normal;
-      margin-top: 1em;
       font-size: 18px;
       line-height: 24px;
-      color: #2F2F2F; }
+      color: #2F2F2F;
+      margin-top: 1em; }
       .HandPottery_Block3_TextContainer_ItemList .arrow {
         margin-right: 10px; }
   .HandPottery_Block3_PriceContainer {
     position: absolute;
     top: 12.38434%;
-    left: 8.33333%;
+    right: 8.33333%;
     width: 28.33333%;
     height: 9.44444%;
     border: 2px solid #BF965F;
@@ -298,11 +299,11 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: transparent;
-      font-family: Roboto Slab;
-      font-style: normal;
-      font-weight: normal; }
+      background: transparent; }
       .HandPottery_Block3_PriceContainer_UpperBox_Title {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
         font-size: 32px;
         line-height: 42px;
         color: #7C8C69; }
@@ -350,12 +351,12 @@ body {
         margin-bottom: 20px; }
         .HandPottery_Block3_VenueContainer_Margin_Item .VenueText {
           font-family: Roboto Slab;
-          margin-top: 5px;
           font-style: normal;
           font-weight: normal;
           font-size: 24px;
+          line-height: 32px;
           color: #2F2F2F;
-          line-height: 32px; }
+          margin-top: 5px; }
   .HandPottery_Block3_SVG {
     position: absolute;
     top: 31.17438%;
@@ -419,8 +420,8 @@ body {
           font-weight: normal;
           font-size: 18px;
           line-height: 24px;
-          margin-bottom: 10px;
-          color: #2F2F2F; }
+          color: #2F2F2F;
+          margin-bottom: 10px; }
         .HandPottery_Block4_RegisterFormContainer_Left_Form .Input {
           width: 100%;
           height: 48px;
@@ -428,13 +429,13 @@ body {
           border: none;
           text-indent: 20px; }
           .HandPottery_Block4_RegisterFormContainer_Left_Form .Input::placeholder {
-            padding-left: 0px;
             font-family: Roboto Slab;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
             line-height: 24px;
-            color: #CFCFCF; }
+            color: #CFCFCF;
+            padding-left: 0px; }
         .HandPottery_Block4_RegisterFormContainer_Left_Form .Form_NameInput {
           width: 100%;
           display: flex;
@@ -524,14 +525,14 @@ body {
                   .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_ButtonContainer_Increase {
                     margin-left: 25px; } }
             .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_Result {
-              grid-area: Result;
-              height: 100%;
               font-family: Roboto Slab;
               font-style: normal;
               font-weight: normal;
               font-size: 18px;
               line-height: 24px;
-              color: #2F2F2F; }
+              color: #2F2F2F;
+              grid-area: Result;
+              height: 100%; }
               .HandPottery_Block4_RegisterFormContainer_Left_Form .UsersCheck_Container_Result_Text {
                 height: 100%;
                 display: flex;
@@ -548,11 +549,11 @@ body {
           .HandPottery_Block4_RegisterFormContainer_Left_Form .Form_Button span {
             font-family: Roboto Slab;
             font-style: normal;
-            font-weight: 500;
+            font-weight: normal;
             font-size: 24px;
             line-height: 36px;
-            text-align: center;
-            color: #FCFCFC; }
+            color: #FCFCFC;
+            text-align: center; }
           .HandPottery_Block4_RegisterFormContainer_Left_Form .Form_Button:hover {
             background: #CFB59A; }
     .HandPottery_Block4_RegisterFormContainer_Right {
@@ -573,7 +574,7 @@ body {
   width: 100%;
   height: 669px;
   position: relative;
-  background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../assets/Rectangle 18.png"); }
+  background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../../assets/Block5_Background.png"); }
   @media screen and (min-width: 0px) {
     .HandPottery_Block5 {
       height: 2200px; } }
