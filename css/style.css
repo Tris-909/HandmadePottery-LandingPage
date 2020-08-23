@@ -63,7 +63,12 @@ body {
     position: absolute;
     z-index: 1;
     left: 38%;
-    top: 31%; }
+    top: 31%;
+    width: 56.11111%;
+    height: 62.92629%; }
+    .HandPottery_Block1_SVG .SVG {
+      width: 100%;
+      height: 100%; }
   .HandPottery_Block1_Button {
     position: absolute;
     top: 88%;
