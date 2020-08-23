@@ -1,0 +1,244 @@
+.HandPottery_Block6 {
+    background: #F2E6DA;
+    width: 100%;
+    height: 273px;
+    position: relative;
+
+    @media screen and (max-width: $break-mini) {
+        height: 530px;     
+    }
+
+    &_Container {
+        width: (1200/1440)*100%;
+        height: (209/273)*100%;
+        position: absolute;
+        left: (120/1200)*100%;
+        top: (32/273)*100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: "Information"
+                              "Copyright";
+    
+        @media screen and (max-width: $break-mini) {
+            @include TakeAllTheSpaces(); 
+
+           top: 0%;
+           left: 0%;
+        }
+
+        &_Information {
+            grid-area: Information;
+            border-bottom: 1px solid #BF965F;
+
+            position: relative;
+
+            @media screen and (max-width: $break-mini) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .SVG_Container {
+                @include AbsolutePositioning(0%, (77/1200)*100%);
+
+                @media screen and (max-width: $break-mini) {
+                    margin-top: 20px;
+                    position: relative;
+                    left: 0%;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .Contact_Container {
+                width: (197/1200)*100%;
+                height: (108/146)*100%;
+                position: absolute;
+                left: (284/1200)*100%;
+
+                display: flex;
+                flex-direction: column;
+
+                @media screen and (max-width: $break-mini) {
+                    position: relative;
+                    left: 10%;
+                    width: 80%;
+                }
+
+                .phoneContact {
+                    @include RobotoSlabText(normal, 14px, 36px, #2F2F2F);
+                    
+                    .PhoneIcon {
+                        margin-right: 10px;
+                    }
+                }
+
+                .EmailContact {
+                    @include RobotoSlabText(normal, 14px, 36px, #2F2F2F);
+                    display: flex;
+
+                    .EmailIcon {
+                        margin-right: 10px;
+                    }
+    
+                    .SecondEmail {
+                        margin-left: 32px;
+
+                        @media screen and (max-width: $break-mini) {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+
+            .SocialLink_Container {
+                width: (120/1200)*100%;
+                height: (80/146)* 100%;
+                display: flex;
+                flex-direction: column;
+                z-index: 10;
+                
+                @include AbsolutePositioning(0%, (588/1200)*100%);
+
+
+                @media screen and (max-width: $break-mini) {
+                    position: relative;
+                    left: 10%;
+                    width: 80%;
+                    height: 35%;
+                    flex-direction: row;
+                }
+
+                &_Text {
+                    @include RobotoSlabText(normal, 14px, 36px, #000000);
+
+                    @media screen and (max-width: $break-mini) {
+                        margin-right: 10px;
+                    }
+                }
+
+                &_Icon {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+                    @media screen and (max-width: $break-mini) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .NewsLetter_Container {
+                width: (408/1200)*100%;
+                height: (80/146)*100%;
+                display: flex;
+                flex-direction: column;
+
+                @include AbsolutePositioning(0%, ((912 - 120)/1200)*100%);
+
+
+                @media screen and (max-width: $break-mini) {
+                    position: relative;
+                    width: 80%;
+                    left: 10%;
+                    margin-bottom: 15px;
+                }
+
+                &_Text {
+                    @include RobotoSlabText(normal, 14px, 36px, #000000);
+                }
+
+                &_EmailInput {
+                    display: grid;
+                    grid-template-columns: 80% 20%;
+                    grid-template-rows: 1fr;
+                    grid-template-areas: "Input Button";
+                    height: 100%;
+
+                    .Input {
+                        grid-area: Input;
+                            @include TakeAllTheSpaces(); 
+
+                            border: none;
+                            text-indent: 20px;
+                            padding: 0px;
+
+                            &::placeholder {
+                                padding-left: 0px;                      
+                                @include RobotoSlabText(normal, 18px, 24px, #CFCFCF);
+
+                                @media screen and (max-width: $break-mini) {
+                                    line-height: 18px;
+                                    font-size: 13px;
+                                }
+                            }
+                    }
+
+                    .Button {
+                        grid-area: Button;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 36px;
+                        text-align: center;
+                        background: #BF965F;
+                        border: none;
+                        color: #FCFCFC;
+
+                        &:hover {
+                            background: #CFB59A;
+                        }
+
+                        @media screen and (max-width: $break-mini) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_CopyRight {
+            grid-area: Copyright;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .CopyRight_Text {
+                @include RobotoSlabText(normal, 18px, 24px,#2F2F2F);
+
+                margin-bottom: 10px;
+                margin-left: 35px;
+            }
+
+            .CopyRight_Link_Lists {
+                display: flex;
+                flex-direction: row;
+
+                @media screen and (max-width: $break-mini) {
+                    justify-content: center;
+                }
+
+                &_Item {
+                    width: 15%;
+                    text-align: center;
+
+                    @media screen and (max-width: $break-mini) {
+                        width: 25%;
+                    }
+
+                    &:not(:last-child) {
+                        border-right: 1px solid #2F2F2F;
+                    }
+
+                    a {
+                        @include RobotoSlabText(normal, 12px, 16px,#2F2F2F);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.HandPottery_Block5 {
+    width: 100%;
+    height: 669px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../assets/Rectangle\ 18.png');
+
+    @media screen and (min-width: 0px) {
+        height: 2200px;
+    }
+
+    @media screen and (min-width: $break-mini) {
+        height: 1200px;
+    }
+
+    &_Container {
+        width: ((1440 - 120*2)/1440)*100%;
+        height: ((669 - 80 -56)/669)*100%;
+        position: absolute;
+        top: (80/669)*100%;
+        left: (120/1440)*100%;
+
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: $break-mini) {
+            top: 0%;
+            height: 100%;
+        }
+
+        &_ForTitle {
+            width: 100%;
+            text-align: center;
+            font-family: Didot;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 62px;
+            color: #2F2F2F;
+            margin-bottom: 30px;
+        }
+
+        &_ForImages {
+            width: 100%;
+            height: (384/533)*100%;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "img1 img2 img3 img4"
+                                 "img5 img6 img7 img8";
+            row-gap: 24px;
+            column-gap: 24px;
+
+            @media screen and (max-width: $break-small) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas: "img1 img2" 
+                                     "img3 img4"
+                                     "img5 img6" 
+                                     "img7 img8";
+                height: 100%;
+            }
+
+            
+            @media screen and (max-width: $break-mini) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: "img1" 
+                                     "img2" 
+                                     "img3" 
+                                     "img4"
+                                     "img5" 
+                                     "img6" 
+                                     "img7" 
+                                     "img8";
+                height: 100%;
+            }
+
+
+            .Ourmoment_img {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: none;
+            }
+
+            .Ourmoment_Images1 {
+                grid-area: img1;
+            }
+            .Ourmoment_Images2 {
+                grid-area: img2;
+            }
+            .Ourmoment_Images3 {
+                grid-area: img3;
+            }
+            .Ourmoment_Images4 {
+                grid-area: img4;
+            }
+            .Ourmoment_Images5 {
+                grid-area: img5;
+            }
+            .Ourmoment_Images6 {
+                grid-area: img6;
+            }
+            .Ourmoment_Images7 {
+                grid-area: img7;
+            }
+            .Ourmoment_Images8 {
+                grid-area: img8;
+            }
+        }
+
+        &_ForButton {
+            margin-top: 35px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: $break-mini) {
+                margin-bottom: 35px;
+            }
+
+            &_Button {
+                background: transparent;
+                padding: 5px;
+                cursor: pointer;
+                border: none;
+                @include RobotoSlabText(normal, 18px, 24px, #BF965F);
+                transition: all .3s;
+            }
+        }
+    }
+}

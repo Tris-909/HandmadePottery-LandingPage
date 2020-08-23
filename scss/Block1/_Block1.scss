@@ -1,0 +1,177 @@
+.HandPottery_Block1 {
+    width: 100%;
+    height: 909px;
+    z-index: 0;
+    background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../assets//5fe4c032c1ffce56de31fb12f7c93492.jpg'), url('../assets//');
+
+    &_Container {
+        width: 83.33%;
+        margin: 0% 8.3% 5.48% 8.3%;
+        height: 91.3%;
+        background-color: transparent;
+        position: relative;
+        // width = 1200px
+        // height = 830px
+
+        @media screen and (max-width: $break-small) {
+            margin: 0% 0% 5.48% 0%;
+            width: 100%;
+        }
+    }
+
+    &_Navbar {
+        width: 74.91%;
+        height: 17.1%;
+        margin: 0% 12.5% 0% 12.5%;
+        background-color: transparent;
+
+        display: flex;
+        flex-direction: row;
+
+        @media screen and (max-width: $break-small) {
+            margin: 0% 0% 0% 0%;
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        @media screen and (min-width: $break-small) and (max-width: $break-medium) {
+            margin: 0% 0% 0% 0%;
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        &_Item {
+            width: (77/948.3)*100%;
+            height: (24/142)*100%;
+            text-decoration: none;
+            margin-top: 86px;
+            margin-right: (60/948.3)*100%;
+            margin-left: (60/948.3)*100%;
+
+            @include RobotoSlabText(700, 18px, 24px, #2F2F2F);
+
+            @media screen and (max-width: $break-small) {
+                margin-top: 56px;
+                margin-right: 0%;
+                margin-left: 0%;
+                text-align: center;
+                width: 100%;
+            }
+
+            @media screen and (min-width: $break-small) and (max-width: $break-medium) {
+                margin-top: 56px;
+                margin-right: 0%;
+                margin-left: 0%;
+                text-align: center;
+                width: 100%;
+            }
+            
+        }
+
+        &_Logo {
+            padding: 32px;
+
+            @media screen and (max-width: $break-small) {
+                display: none;
+            }
+        }
+    }
+
+    &_MainText {
+        @include AbsolutePositioning(27%);
+        width: 38.25%;
+        height: 22.4%;
+
+        font-family: 'GFS Didot', serif;
+        font-size: 72px;
+        font-weight: 600;
+        color: #2F2F2F;
+        text-transform: uppercase;
+
+        @media screen and (max-width: $break-small) {
+            font-size: 56px;
+            top: 18%;
+        }
+
+        @media screen and (min-width: $break-small) and (max-width: $break-medium)  {
+            z-index: 10;
+        }
+    }
+
+    &_VerticalText {
+        @include AbsolutePositioning(57%, -7%);
+
+        font-family: 'Sacramento', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 72px;
+        line-height: 105px;
+
+        width: 21.91%;
+        height: 12.65%;
+        transform: rotate(-90deg);
+        color: #BF965F;
+
+        @media screen and (max-width: $break-small) {
+            left: 2%;
+            top: 57%;
+        }
+
+        
+        @media screen and (min-width: $break-small) and (max-width: $break-medium) {
+            top: 65%;
+        }
+    }
+
+    &_SVG {
+        @include AbsolutePositioning(31%, 38%);
+
+        z-index: 1;
+        width: (808/1440)*100%;
+        height: (572/909)*100%;
+
+        @media screen and (max-width: $break-small) {
+            top: 20%;
+            left: 26%;
+            width: 70%;
+        }
+
+        @media screen and (min-width: $break-small) and (max-width: $break-medium)  {
+            top: 36%;
+            left: 30%;
+            width: 75%;
+        }
+
+        .SVG {
+            @include TakeAllTheSpaces();
+        }
+    }
+
+    &_Button {
+        @include AbsolutePositioning(88%, 0%);
+
+        padding: 12px;
+        background: #BF965F;
+        text-align: center;
+        border: none;
+
+        a {
+            @include RobotoSlabText(500, 24px, 36px, #FCFCFC);
+            text-decoration: none;
+        }
+
+        &:hover {
+            background: #CFB59A;
+        }
+
+        @media screen and (max-width: $break-small) {
+            left: 25%;
+        }
+    }
+}

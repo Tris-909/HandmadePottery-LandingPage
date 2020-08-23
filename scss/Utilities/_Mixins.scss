@@ -1,0 +1,25 @@
+@mixin RobotoSlabText($fontWeight: normal, $fontSize, $lineHeight, $Color: #2F2F2F) {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $Color;
+}
+
+@mixin TakeAllTheSpaces() {
+    height: 100%;
+    width: 100%;
+}
+
+@mixin TopLeftRelative() {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+@mixin AbsolutePositioning($top: 0%, $left: 0%) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}

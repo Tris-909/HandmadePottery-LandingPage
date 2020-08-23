@@ -74,6 +74,7 @@ body {
   .HandPottery_Block1_MainText {
     position: absolute;
     top: 27%;
+    left: 0%;
     width: 38.25%;
     height: 22.4%;
     font-family: 'GFS Didot', serif;
@@ -90,8 +91,8 @@ body {
         z-index: 10; } }
   .HandPottery_Block1_VerticalText {
     position: absolute;
-    left: -7%;
     top: 57%;
+    left: -7%;
     font-family: 'Sacramento', cursive;
     font-style: normal;
     font-weight: normal;
@@ -110,9 +111,9 @@ body {
         top: 65%; } }
   .HandPottery_Block1_SVG {
     position: absolute;
-    z-index: 1;
-    left: 38%;
     top: 31%;
+    left: 38%;
+    z-index: 1;
     width: 56.11111%;
     height: 62.92629%; }
     @media screen and (max-width: 770px) {
@@ -126,8 +127,8 @@ body {
         left: 30%;
         width: 75%; } }
     .HandPottery_Block1_SVG .SVG {
-      width: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
   .HandPottery_Block1_Button {
     position: absolute;
     top: 88%;
@@ -171,28 +172,28 @@ body {
       .HandPottery_Block2_RightPicture {
         grid-area: Picture1;
         position: relative;
-        width: 100%;
-        height: 100%;
         top: 0%;
-        left: 0%; } }
+        left: 0%;
+        height: 100%;
+        width: 100%; } }
     .HandPottery_Block2_RightPicture .Picture {
-      width: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
   .HandPottery_Block2_TextContainer {
-    width: 44.16667%;
-    height: 49.63636%;
     position: absolute;
     top: 25.27%;
     left: 27.91%;
+    width: 44.16667%;
+    height: 49.63636%;
     display: flex;
     flex-direction: column; }
     @media screen and (max-width: 770px) {
       .HandPottery_Block2_TextContainer {
         grid-area: Text;
-        width: 100%;
-        height: 100%;
         top: 0%;
-        left: 0%; } }
+        left: 0%;
+        height: 100%;
+        width: 100%; } }
     .HandPottery_Block2_TextContainer_Title {
       height: 93px;
       text-align: center;
@@ -220,13 +221,13 @@ body {
       .HandPottery_Block2_LeftPicture {
         grid-area: Picture2;
         position: relative;
-        width: 100%;
-        height: 100%;
         top: 0%;
-        left: 0%; } }
+        left: 0%;
+        height: 100%;
+        width: 100%; } }
     .HandPottery_Block2_LeftPicture .Picture {
-      width: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
 
 .HandPottery_Block3 {
   width: 100%;
@@ -252,10 +253,10 @@ body {
         margin-top: 50px;
         grid-area: Text;
         width: 100%;
+        text-align: center;
         position: relative;
-        left: 0;
-        top: 0;
-        text-align: center; } }
+        top: 0%;
+        left: 0%; } }
     .HandPottery_Block3_TextContainer_Title {
       font-family: Didot;
       font-style: normal;
@@ -276,7 +277,7 @@ body {
   .HandPottery_Block3_PriceContainer {
     position: absolute;
     top: 12.38434%;
-    right: 8.33333%;
+    left: 8.33333%;
     width: 28.33333%;
     height: 9.44444%;
     border: 2px solid #BF965F;
@@ -286,12 +287,12 @@ body {
     @media screen and (max-width: 770px) {
       .HandPottery_Block3_PriceContainer {
         grid-area: Price;
-        width: 100%;
-        height: 100%;
+        text-align: center;
         position: relative;
-        left: 0;
-        top: 0;
-        text-align: center; } }
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%; } }
     .HandPottery_Block3_PriceContainer_UpperBox {
       height: 64.70588%;
       display: flex;
@@ -330,10 +331,10 @@ body {
         grid-area: Venue;
         width: 100%;
         height: 50%;
+        text-align: center;
         position: relative;
-        left: 0;
-        top: 0;
-        text-align: center; } }
+        top: 0%;
+        left: 0%; } }
     .HandPottery_Block3_VenueContainer_Margin {
       width: 79.90196%;
       height: 72.97297%;
@@ -357,21 +358,21 @@ body {
           line-height: 32px; }
   .HandPottery_Block3_SVG {
     position: absolute;
-    width: 47.91667%;
-    height: 33.02491%;
+    top: 31.17438%;
     left: 8.33333%;
-    top: 31.17438%; }
+    width: 47.91667%;
+    height: 33.02491%; }
     @media screen and (max-width: 770px) {
       .HandPottery_Block3_SVG {
         grid-area: SVG;
-        width: 100%;
-        height: 100%;
         position: relative;
-        left: 0;
-        top: 0; } }
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%; } }
     .HandPottery_Block3_SVG .SVG {
-      width: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
 
 .HandPottery_Block4 {
   width: 100%;
@@ -556,14 +557,14 @@ body {
             background: #CFB59A; }
     .HandPottery_Block4_RegisterFormContainer_Right {
       grid-area: image;
-      width: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
       @media screen and (max-width: 770px) {
         .HandPottery_Block4_RegisterFormContainer_Right {
           display: none; } }
       .HandPottery_Block4_RegisterFormContainer_Right .ImageForm {
-        width: 100%;
         height: 100%;
+        width: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -702,6 +703,7 @@ body {
           flex-direction: column; } }
       .HandPottery_Block6_Container_Information .SVG_Container {
         position: absolute;
+        top: 0%;
         left: 6.41667%; }
         @media screen and (max-width: 450px) {
           .HandPottery_Block6_Container_Information .SVG_Container {
@@ -722,7 +724,7 @@ body {
           .HandPottery_Block6_Container_Information .Contact_Container {
             position: relative;
             left: 10%;
-            width: 100%; } }
+            width: 80%; } }
         .HandPottery_Block6_Container_Information .Contact_Container .phoneContact {
           font-family: Roboto Slab;
           font-style: normal;
@@ -752,14 +754,15 @@ body {
         height: 54.79452%;
         display: flex;
         flex-direction: column;
+        z-index: 10;
         position: absolute;
-        left: 49%;
-        z-index: 10; }
+        top: 0%;
+        left: 49%; }
         @media screen and (max-width: 450px) {
           .HandPottery_Block6_Container_Information .SocialLink_Container {
             position: relative;
             left: 10%;
-            width: 100%;
+            width: 80%;
             height: 35%;
             flex-direction: row; } }
         .HandPottery_Block6_Container_Information .SocialLink_Container_Text {
@@ -786,6 +789,7 @@ body {
         display: flex;
         flex-direction: column;
         position: absolute;
+        top: 0%;
         left: 66%; }
         @media screen and (max-width: 450px) {
           .HandPottery_Block6_Container_Information .NewsLetter_Container {
@@ -808,8 +812,8 @@ body {
           height: 100%; }
           .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Input {
             grid-area: Input;
-            width: 100%;
             height: 100%;
+            width: 100%;
             border: none;
             text-indent: 20px;
             padding: 0px; }
