@@ -15,6 +15,10 @@ body {
     height: 91.3%;
     background-color: transparent;
     position: relative; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block1_Container {
+        margin: 0% 0% 5.48% 0%;
+        width: 100%; } }
   .HandPottery_Block1_Navbar {
     width: 74.91%;
     height: 17.1%;
@@ -22,30 +26,68 @@ body {
     background-color: transparent;
     display: flex;
     flex-direction: row; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block1_Navbar {
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr; } }
+    @media screen and (min-width: 700px) and (max-width: 1400px) {
+      .HandPottery_Block1_Navbar {
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr; } }
     .HandPottery_Block1_Navbar_Item {
-      width: 77px;
-      height: 24px;
+      width: 8.11979%;
+      height: 16.90141%;
       text-decoration: none;
       margin-top: 86px;
-      margin-right: 60px;
-      margin-left: 60px;
+      margin-right: 6.32711%;
+      margin-left: 6.32711%;
       font-family: 'Roboto Slab', serif;
       font-weight: 700;
       color: #2F2F2F;
       font-size: 18px;
       line-height: 24px; }
+      @media screen and (max-width: 700px) {
+        .HandPottery_Block1_Navbar_Item {
+          margin-top: 56px;
+          margin-right: 0%;
+          margin-left: 0%;
+          text-align: center;
+          width: 100%; } }
+      @media screen and (min-width: 700px) and (max-width: 1400px) {
+        .HandPottery_Block1_Navbar_Item {
+          margin-top: 56px;
+          margin-right: 0%;
+          margin-left: 0%;
+          text-align: center;
+          width: 100%; } }
     .HandPottery_Block1_Navbar_Logo {
       padding: 32px; }
+      @media screen and (max-width: 700px) {
+        .HandPottery_Block1_Navbar_Logo {
+          display: none; } }
   .HandPottery_Block1_MainText {
     position: absolute;
     top: 27%;
     width: 38.25%;
     height: 22.4%;
     font-family: 'GFS Didot', serif;
-    font-style: bold;
     font-size: 72px;
+    font-weight: 600;
     color: #2F2F2F;
     text-transform: uppercase; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block1_MainText {
+        font-size: 56px;
+        top: 18%; } }
+    @media screen and (min-width: 700px) and (max-width: 1400px) {
+      .HandPottery_Block1_MainText {
+        z-index: 10; } }
   .HandPottery_Block1_VerticalText {
     position: absolute;
     left: -7%;
@@ -59,6 +101,13 @@ body {
     height: 12.65%;
     transform: rotate(-90deg);
     color: #BF965F; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block1_VerticalText {
+        left: 2%;
+        top: 57%; } }
+    @media screen and (min-width: 700px) and (max-width: 1400px) {
+      .HandPottery_Block1_VerticalText {
+        top: 65%; } }
   .HandPottery_Block1_SVG {
     position: absolute;
     z-index: 1;
@@ -66,6 +115,16 @@ body {
     top: 31%;
     width: 56.11111%;
     height: 62.92629%; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block1_SVG {
+        top: 20%;
+        left: 26%;
+        width: 70%; } }
+    @media screen and (min-width: 700px) and (max-width: 1400px) {
+      .HandPottery_Block1_SVG {
+        top: 36%;
+        left: 30%;
+        width: 75%; } }
     .HandPottery_Block1_SVG .SVG {
       width: 100%;
       height: 100%; }
@@ -85,6 +144,11 @@ body {
       font-size: 24px;
       text-decoration: none;
       line-height: 36px; }
+    .HandPottery_Block1_Button:hover {
+      background: #CFB59A; }
+    @media screen and (max-width: 700px) {
+      .HandPottery_Block1_Button {
+        left: 25%; } }
 
 .HandPottery_Block2 {
   width: 100%;
@@ -219,8 +283,13 @@ body {
           line-height: 32px; }
   .HandPottery_Block3_SVG {
     position: absolute;
+    width: 47.91667%;
+    height: 33.02491%;
     left: 8.33333%;
     top: 31.17438%; }
+    .HandPottery_Block3_SVG .SVG {
+      width: 100%;
+      height: 100%; }
 
 .HandPottery_Block4 {
   width: 100%;
@@ -380,6 +449,8 @@ body {
             line-height: 36px;
             text-align: center;
             color: #FCFCFC; }
+          .HandPottery_Block4_RegisterFormContainer_Left_Form .Form_Button:hover {
+            background: #CFB59A; }
     .HandPottery_Block4_RegisterFormContainer_Right {
       grid-area: image;
       width: 100%;
@@ -463,9 +534,6 @@ body {
         line-height: 24px;
         color: #BF965F;
         transition: all .3s; }
-        .HandPottery_Block5_Container_ForButton_Button:hover {
-          background: #BF965F;
-          color: #FCFCFC; }
 
 .HandPottery_Block6 {
   background: #F2E6DA;
@@ -582,6 +650,8 @@ body {
             background: #BF965F;
             border: none;
             color: #FCFCFC; }
+            .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Button:hover {
+              background: #CFB59A; }
     .HandPottery_Block6_Container_CopyRight {
       grid-area: Copyright;
       margin-top: 20px;
