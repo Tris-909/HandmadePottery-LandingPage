@@ -461,3 +461,149 @@ body {
         .HandPottery_Block5_Container_ForButton_Button:hover {
           background: #BF965F;
           color: #FCFCFC; }
+
+.HandPottery_Block6 {
+  background: #F2E6DA;
+  width: 100%;
+  height: 273px;
+  position: relative; }
+  .HandPottery_Block6_Container {
+    width: 83.33333%;
+    height: 76.55678%;
+    position: absolute;
+    left: 10%;
+    top: 11.72161%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "Information" "Copyright"; }
+    .HandPottery_Block6_Container_Information {
+      grid-area: Information;
+      border-bottom: 1px solid #BF965F;
+      position: relative; }
+      .HandPottery_Block6_Container_Information .SVG_Container {
+        position: absolute;
+        left: 6.41667%; }
+      .HandPottery_Block6_Container_Information .Contact_Container {
+        width: 16.41667%;
+        height: 73.9726%;
+        position: absolute;
+        left: 23.66667%;
+        display: flex;
+        flex-direction: column; }
+        .HandPottery_Block6_Container_Information .Contact_Container .phoneContact {
+          font-family: Roboto Slab;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 36px;
+          color: #2F2F2F; }
+          .HandPottery_Block6_Container_Information .Contact_Container .phoneContact .PhoneIcon {
+            margin-right: 10px; }
+        .HandPottery_Block6_Container_Information .Contact_Container .EmailContact {
+          font-family: Roboto Slab;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 36px;
+          color: #2F2F2F;
+          display: flex; }
+          .HandPottery_Block6_Container_Information .Contact_Container .EmailContact .EmailIcon {
+            margin-right: 10px; }
+          .HandPottery_Block6_Container_Information .Contact_Container .EmailContact .SecondEmail {
+            margin-left: 32px; }
+      .HandPottery_Block6_Container_Information .SocialLink_Container {
+        width: 10%;
+        height: 54.79452%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 49%;
+        z-index: 10; }
+        .HandPottery_Block6_Container_Information .SocialLink_Container_Text {
+          font-family: Roboto Slab;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 36px;
+          color: #000000; }
+        .HandPottery_Block6_Container_Information .SocialLink_Container_Icon {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly; }
+      .HandPottery_Block6_Container_Information .NewsLetter_Container {
+        width: 34%;
+        height: 54.79452%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 66%; }
+        .HandPottery_Block6_Container_Information .NewsLetter_Container_Text {
+          font-family: Roboto Slab;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 36px;
+          color: #000000; }
+        .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput {
+          display: grid;
+          grid-template-columns: 80% 20%;
+          grid-template-rows: 1fr;
+          grid-template-areas: "Input Button";
+          height: 100%; }
+          .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Input {
+            grid-area: Input;
+            width: 100%;
+            height: 100%;
+            border: none;
+            text-indent: 20px;
+            padding: 0px; }
+            .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Input::placeholder {
+              padding-left: 0px;
+              font-family: Roboto Slab;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 24px;
+              color: #CFCFCF; }
+          .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Button {
+            grid-area: Button;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+            text-align: center;
+            background: #BF965F;
+            border: none;
+            color: #FCFCFC; }
+    .HandPottery_Block6_Container_CopyRight {
+      grid-area: Copyright;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column; }
+      .HandPottery_Block6_Container_CopyRight .CopyRight_Text {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #2F2F2F;
+        margin-bottom: 10px;
+        margin-left: 35px; }
+      .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists {
+        display: flex;
+        flex-direction: row; }
+        .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists_Item {
+          width: 15%;
+          text-align: center; }
+          .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists_Item:not(:last-child) {
+            border-right: 1px solid #2F2F2F; }
+          .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists_Item a {
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #2F2F2F;
+            text-decoration: none; }
