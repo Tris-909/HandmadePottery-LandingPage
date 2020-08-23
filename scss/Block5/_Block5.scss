@@ -2,7 +2,7 @@
     width: 100%;
     height: 669px;
     position: relative;
-    background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../assets/Rectangle\ 18.png');
+    background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../../assets/Block5_Background.png');
 
     @media screen and (min-width: 0px) {
         height: 2200px;
@@ -129,7 +129,7 @@
                 padding: 5px;
                 cursor: pointer;
                 border: none;
-                @include RobotoSlabText(normal, 18px, 24px, #BF965F);
+                @include RobotoSlabText(18px, 24px, #BF965F);
                 transition: all .3s;
             }
         }

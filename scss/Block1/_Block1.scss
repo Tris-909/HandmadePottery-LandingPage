@@ -2,7 +2,7 @@
     width: 100%;
     height: 909px;
     z-index: 0;
-    background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url('../assets//5fe4c032c1ffce56de31fb12f7c93492.jpg'), url('../assets//');
+    background: linear-gradient(0deg, rgba(242, 230, 218, 0.1), rgba(242, 230, 218, 0.1)), url("../../assets/Block1_Background.jpg");
 
     &_Container {
         width: 83.33%;
@@ -54,7 +54,7 @@
             margin-right: (60/948.3)*100%;
             margin-left: (60/948.3)*100%;
 
-            @include RobotoSlabText(700, 18px, 24px, #2F2F2F);
+            @include RobotoSlabText(18px, 24px, #2F2F2F, 700);
 
             @media screen and (max-width: $break-small) {
                 margin-top: 56px;
@@ -162,7 +162,7 @@
         border: none;
 
         a {
-            @include RobotoSlabText(500, 24px, 36px, #FCFCFC);
+            @include RobotoSlabText(24px, 36px, #FCFCFC, 500);
             text-decoration: none;
         }
 

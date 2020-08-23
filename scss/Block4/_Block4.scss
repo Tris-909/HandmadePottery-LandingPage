@@ -48,7 +48,7 @@
                 }
 
                 .InputTitle {
-                    @include RobotoSlabText(normal, 18px, 24px, #2F2F2F);
+                    @include RobotoSlabText(18px, 24px, #2F2F2F);
                     margin-bottom: 10px;
                 }
 
@@ -60,7 +60,7 @@
                     text-indent: 20px;
 
                     &::placeholder {
-                        @include RobotoSlabText(normal, 18px, 24px, #CFCFCF);
+                        @include RobotoSlabText(18px, 24px, #CFCFCF);
                         padding-left: 0px;
                     }
                 }
@@ -99,7 +99,7 @@
                     margin-bottom: 40px;
 
                     &_Question {
-                        @include RobotoSlabText(normal, 18px, 24px, #2F2F2F);
+                        @include RobotoSlabText(18px, 24px, #2F2F2F);
                         margin-bottom: 20px;
                     }
 
@@ -149,7 +149,7 @@
                             }
 
                             &_Number {     
-                                @include RobotoSlabText(normal, 18px, 24px, #2F2F2F);
+                                @include RobotoSlabText(18px, 24px, #2F2F2F);
                             }
 
                             &_Increase {
@@ -169,7 +169,7 @@
                         }
 
                         &_Result {
-                            @include RobotoSlabText(normal, 18px, 24px, #2F2F2F);
+                            @include RobotoSlabText(18px, 24px, #2F2F2F);
                             grid-area: Result;
                             height: 100%;
 
@@ -195,7 +195,7 @@
                     border: none;
 
                     span {
-                        @include RobotoSlabText(500, 24px, 36px, #FCFCFC);
+                        @include RobotoSlabText(24px, 36px, #FCFCFC, 500);
                         text-align: center;
                     }
 

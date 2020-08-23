@@ -59,7 +59,7 @@
         }
 
         &_Text {
-            @include RobotoSlabText(normal, 18px, 36px, #2F2F2F);
+            @include RobotoSlabText(18px, 36px, #2F2F2F);
             text-align: center;
         }
     }

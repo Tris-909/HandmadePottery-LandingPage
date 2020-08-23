@@ -1,4 +1,4 @@
-@mixin RobotoSlabText($fontWeight: normal, $fontSize, $lineHeight, $Color: #2F2F2F) {
+@mixin RobotoSlabText($fontSize, $lineHeight, $Color: #2F2F2F, $fontWeight: normal) {
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: normal;
