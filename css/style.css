@@ -673,6 +673,9 @@ body {
   width: 100%;
   height: 273px;
   position: relative; }
+  @media screen and (max-width: 450px) {
+    .HandPottery_Block6 {
+      height: 530px; } }
   .HandPottery_Block6_Container {
     width: 83.33333%;
     height: 76.55678%;
@@ -683,13 +686,31 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 70% 30%;
     grid-template-areas: "Information" "Copyright"; }
+    @media screen and (max-width: 450px) {
+      .HandPottery_Block6_Container {
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%; } }
     .HandPottery_Block6_Container_Information {
       grid-area: Information;
       border-bottom: 1px solid #BF965F;
       position: relative; }
+      @media screen and (max-width: 450px) {
+        .HandPottery_Block6_Container_Information {
+          display: flex;
+          flex-direction: column; } }
       .HandPottery_Block6_Container_Information .SVG_Container {
         position: absolute;
         left: 6.41667%; }
+        @media screen and (max-width: 450px) {
+          .HandPottery_Block6_Container_Information .SVG_Container {
+            margin-top: 20px;
+            position: relative;
+            left: 0%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px; } }
       .HandPottery_Block6_Container_Information .Contact_Container {
         width: 16.41667%;
         height: 73.9726%;
@@ -697,6 +718,11 @@ body {
         left: 23.66667%;
         display: flex;
         flex-direction: column; }
+        @media screen and (max-width: 450px) {
+          .HandPottery_Block6_Container_Information .Contact_Container {
+            position: relative;
+            left: 10%;
+            width: 100%; } }
         .HandPottery_Block6_Container_Information .Contact_Container .phoneContact {
           font-family: Roboto Slab;
           font-style: normal;
@@ -718,6 +744,9 @@ body {
             margin-right: 10px; }
           .HandPottery_Block6_Container_Information .Contact_Container .EmailContact .SecondEmail {
             margin-left: 32px; }
+            @media screen and (max-width: 450px) {
+              .HandPottery_Block6_Container_Information .Contact_Container .EmailContact .SecondEmail {
+                margin-left: 0px; } }
       .HandPottery_Block6_Container_Information .SocialLink_Container {
         width: 10%;
         height: 54.79452%;
@@ -726,6 +755,13 @@ body {
         position: absolute;
         left: 49%;
         z-index: 10; }
+        @media screen and (max-width: 450px) {
+          .HandPottery_Block6_Container_Information .SocialLink_Container {
+            position: relative;
+            left: 10%;
+            width: 100%;
+            height: 35%;
+            flex-direction: row; } }
         .HandPottery_Block6_Container_Information .SocialLink_Container_Text {
           font-family: Roboto Slab;
           font-style: normal;
@@ -733,11 +769,17 @@ body {
           font-size: 14px;
           line-height: 36px;
           color: #000000; }
+          @media screen and (max-width: 450px) {
+            .HandPottery_Block6_Container_Information .SocialLink_Container_Text {
+              margin-right: 10px; } }
         .HandPottery_Block6_Container_Information .SocialLink_Container_Icon {
           margin-top: 10px;
           display: flex;
           flex-direction: row;
           justify-content: space-evenly; }
+          @media screen and (max-width: 450px) {
+            .HandPottery_Block6_Container_Information .SocialLink_Container_Icon {
+              width: 100%; } }
       .HandPottery_Block6_Container_Information .NewsLetter_Container {
         width: 34%;
         height: 54.79452%;
@@ -745,6 +787,12 @@ body {
         flex-direction: column;
         position: absolute;
         left: 66%; }
+        @media screen and (max-width: 450px) {
+          .HandPottery_Block6_Container_Information .NewsLetter_Container {
+            position: relative;
+            width: 80%;
+            left: 10%;
+            margin-bottom: 15px; } }
         .HandPottery_Block6_Container_Information .NewsLetter_Container_Text {
           font-family: Roboto Slab;
           font-style: normal;
@@ -773,6 +821,10 @@ body {
               font-size: 18px;
               line-height: 24px;
               color: #CFCFCF; }
+              @media screen and (max-width: 450px) {
+                .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Input::placeholder {
+                  line-height: 18px;
+                  font-size: 13px; } }
           .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Button {
             grid-area: Button;
             font-style: normal;
@@ -785,6 +837,9 @@ body {
             color: #FCFCFC; }
             .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Button:hover {
               background: #CFB59A; }
+            @media screen and (max-width: 450px) {
+              .HandPottery_Block6_Container_Information .NewsLetter_Container_EmailInput .Button {
+                font-size: 15px; } }
     .HandPottery_Block6_Container_CopyRight {
       grid-area: Copyright;
       margin-top: 20px;
@@ -802,9 +857,15 @@ body {
       .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists {
         display: flex;
         flex-direction: row; }
+        @media screen and (max-width: 450px) {
+          .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists {
+            justify-content: center; } }
         .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists_Item {
           width: 15%;
           text-align: center; }
+          @media screen and (max-width: 450px) {
+            .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists_Item {
+              width: 25%; } }
           .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists_Item:not(:last-child) {
             border-right: 1px solid #2F2F2F; }
           .HandPottery_Block6_Container_CopyRight .CopyRight_Link_Lists_Item a {
